@@ -140,5 +140,20 @@ document.body.addEventListener('dblclick', (event) => {
     event.target.classList.toggle('dbclick');
 } )
 
+const navLinks = document.querySelectorAll('.nav-link');
 
+navLinks.forEach( (item) => {
+    item.addEventListener('click', function (event) {
+        navLinks.forEach(item => item.classList.remove('navLinkClicked'));
+        event.preventDefault();
+        event.stopPropagation();
+        event.target.classList.add('navLinkClicked');
+    })})
 
+const logoHeading = document.querySelector('.nav-container');
+
+logoHeading.addEventListener('click', function (event) {
+    logoHeading.style.background = "red";   
+});
+
+console.log(logoHeading);

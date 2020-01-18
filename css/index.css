@@ -326,6 +326,7 @@ img {
     margin: 0 auto 30px;
   }
 }
+
 .home .content-pick .destination .btn {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -341,6 +342,7 @@ img {
   cursor: pointer;
   font-size: 1.8rem;
 }
+
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
@@ -359,5 +361,8 @@ img {
   border: 1px solid black;
   width: 100%;
   height: 100px;
- 
+}
+
+.navLinkClicked {
+  font-weight: bold;
 }
